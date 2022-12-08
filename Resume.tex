@@ -1,0 +1,259 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{#2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\usepackage{calc} % added
+\newcommand{\resumeSubSubheadingLeft}[2]{% % added
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+\end{description}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Large Aaditya Suri} \\ \vspace{1pt}
+    \small 236-990-5666 $|$ \href{mailto:aadityasuri01@gmail.com}{\underline{aadityasuri01@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/aadityasuri/}{\underline{Linkedin}} $|$
+    \href{https://github.com/AadityaSuri}{\underline{Github}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{\textnormal{Vancouver, BC}}
+      {\textnormal{Bachelor of Applied Science – Computer Engineering}}{\textnormal{\textbf{Expected May 2024}}}
+
+     \resumeSubSubheadingLeft% added <<<<<<<<<<<<<<<
+    {Coursework:}{Software Construction I, Basic Algorithms and Data Structures, Computing Systems I, Computing Systems II, Digital Systems Design, Operating Systems, Software Construction II}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Java, SystemVerilog, C\#, MATLAB, Assembly, HTML, CSS, JavaScript} \\
+     \textbf{Frameworks}{: MongoDB, Node.js, Flask, JUnit, Express, PyTorch, TensorFlow, Bootstrap, JSON} \\
+     \textbf{Tools}{: Git, Google Cloud Platform, VS Code, PyCharm, IntelliJ, Unit Testing, ModelSim, Intel Quartus Prime, Oscilloscope, Raspberry Pi, Arduino} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, OpenGL} \\
+     \textbf{Concepts}{: RISC-V, MIPS, ARMv8, RTL Synthesis, TCP/IP, Multithreading, Linux, Operating Systems, FPGAs, MVC}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {Physical Design Engineer}{January 2023 -- Present}
+    %   {Microchip Technology Inc.}{Burnaby, BC}
+    %   \resumeItemListStart
+    %     \resumeItem{}
+    %   \resumeItemListEnd
+
+    \resumeSubheading
+      {Firmware Engineer}{February 2022 -- Present}
+      {UBC Open Robotics}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Used \textbf{C} to create and test the \textbf{firmware} and electrical design of a gripper for the RoboCup@Home project}
+        \resumeItem{Calibrated various \textbf{sensors} to work with other electrical and mechanical components}
+        \resumeItem{Programmed \textbf{microcontrollers} for making the gripper work in sync with the arms of the robot and the software}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Game Mechanics Programmer, Character Sprite Artist}{September 2020 -- April 2019}
+      {UBC Game Development Club}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Programmed game mechanics in \textbf{Unity} 2D game engine using \textbf{C\#} and \textbf{C++} }
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{“Best Gameplay” and “Game of The Year” awarded to our game}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{FPGA Rendering Accelerator} $|$ \emph{SystemVerilog, Intel Quartus}}{November 2022 -- December 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented a digital circuit using \textbf{SystemVerilog} on the \textbf{DE1-SoC FPGA} to render the Mandelbrot set on a VGA screen using an optimized version of the escape time algorithm}
+            \resumeItem{Designed multiple units to perform complex \textbf{fixed-point arithmetic}}
+            \resumeItem{Improved circuit to be capable of continuously recalculating pixel values based on zoom level set by user}
+          \resumeItemListEnd
+
+          
+      \resumeProjectHeading
+          {\textbf{OS161} $|$ \emph{C, Assembly, Operating Systems}}{October 2022 -- December 2022}
+          \resumeItemListStart
+            \resumeItem{Designed the entire file and process management data structure and implemented multiple \textbf{syscalls} like open, close, read, write, fork, waitpid, exec, etc. using \textbf{C} and \textbf{Assembly}}
+            \resumeItem{Added support to the OS to handle \textbf{concurrent threads} using \textbf{locks}, \textbf{semaphores}, and \textbf{condition variables}}
+            \resumeItem{Implemented the entire \textbf{Virtual memory system} for the operating system}
+          \resumeItemListEnd
+    
+
+        \resumeProjectHeading
+            {\textbf{Online Chatting App} $|$ \emph{HTML, CSS, Javascript, MongoDB, Express}}{November 2022}
+            \resumeItemListStart
+                \resumeItem{Developed the entire Frontend and Backend for an online chatting app using \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}}
+                \resumeItem{Used the \textbf{Model-View-Controller(MVC)} software architecture for the application}
+                \resumeItem{Added data persistance using \textbf{MongoDB}}
+                \resumeItem{Added user authentication and middleware using \textbf{Express.js} to protect against \textbf{XSS attacks}}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{MaskMatcher} $|$ \emph{Python, PyTorch, Raspberry Pi}}{March 2022 -- April 2022}
+            \resumeItemListStart
+                \resumeItem{Developed a \textbf{machine learning} model for classification of faces wearing masks using the \textbf{PyTorch} library with over 80\% accuracy. Heavily optimized to run smoothly on \textbf{Raspberry Pi} using minimal hardware resources}
+                \resumeItem{Used \textbf{OpenCV} and \textbf{Haar Cascades} to determine confidence interval of face mask detection}
+                \resumeItem{Implemented multithreading on a \textbf{Raspberry Pi} to capture video from a webcam, run the \textbf{machine learning} model and live stream the video to a website simultaneously}
+            \resumeItemListEnd
+            
+        \pagebreak
+
+        \resumeProjectHeading
+            {\textbf{Pianote} $|$ \emph{Python, PyGame}}{January 2022}
+            \resumeItemListStart
+                \resumeItem{Designed an app during a 24-hour \textbf{hackathon} which can be used by pianists for ear training }
+                \resumeItem{Uses Python’s \textbf{Pygame} library for GUI and can play and recognize different notes played by the user on a virtual keyboard. Provides immediate feedback to user regarding the note they played and the expected note}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{Wikipedia Mediator Server} $|$ \emph{Java, Multithreading, Web Servers, JSON}}{December 2021}
+            \resumeItemListStart
+                \resumeItem{Setup a \textbf{multithreaded Java web server} capable of handling concurrent requests by parsing \textbf{JSON} input from multiple clients using the \textbf{Gson} library}
+                \resumeItem{Integrated the \textbf{JWiki API} into program to serve data from Wikipedia as required by the client’s request}
+                \resumeItem{Implemented a \textbf{BFS algorithm} to find minimum number of Wikipedia links required to get from one Wikipedia page to another which was able to produce more accurate results than already existing applications}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{RISC-V CPU} $|$ \emph{Verilog, RISC-V, ModelSim, Intel Quartus}}{October 2021 -- December 2021}
+            \resumeItemListStart
+                \resumeItem{Developed and implemented a Turing complete CPU based on \textbf{RISC-V computer architecture} using \textbf{Intel Quartus} on the \textbf{DE1-SoC FPGA} }
+                \resumeItem{Simulated and debugged hardware modules in \textbf{ModelSim} by writing extensive Testbenches using \textbf{Verilog}}
+                \resumeItem{Achieved up to 40\% reduction in instruction completion time by adding \textbf{pipelining hardware} to the design}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{Plagiarism Detection} $|$ \emph{Java, Google Cloud}}{October 2021}
+            \resumeItemListStart
+                \resumeItem{Analyzed text documents to report basic sentence and word level metrics using \textbf{Java}}
+                \resumeItem{Integrated \textbf{Google Cloud} Natural Language client library into application to report positive or negative sentiment analysis of document }
+                \resumeItem{Implemented the Jensen-Shannon Divergence method to analyze similarity between documents and detect plagiarism}
+                \resumeItem{Used the \textbf{JUnit} framework to write comprehensive unit tests to debug and solve issues efficiently}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+
+\end{document}
